@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+/* Styles cho Header */
+header {
+    background-color: #000;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Căn giữa và phân bố đều các phần tử */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    padding: 10px 20px;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Dùng flex để các menu item nằm ngang */
+    margin: 0;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+header .search-bar {
+    display: flex; /* Đảm bảo thanh tìm kiếm nằm trên cùng dòng */
+    align-items: center;
+}
+
+header .search-bar input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+header .search-bar button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .search-bar button:hover {
+    background-color: #0056b3;
+}
+
+header .user-actions {
+    display: flex; /* Đảm bảo các nút người dùng nằm trên cùng dòng */
+    align-items: center;
+}
+
+header .user-actions button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px; /* Tạo khoảng cách giữa các nút */
+}
+
+header .user-actions button:hover {
+    background-color: #218838;
+}
+
+
+
+/* Carousel Styles */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Card Styles */
+.card.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.card.custom-card:hover {
+    transform: translateY(-10px); /* Nảy lên effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card .btn {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Spacing between div elements */
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+/* Giảm khoảng cách giữa các nút trong nhóm */
+.btn-group .btn {
+    margin-right: 5px; /* Giảm khoảng cách giữa các nút */
+}
+
+/* Nếu cần giảm khoảng cách giữa các mục dropdown */
+.dropdown-menu {
+    margin-top: 0; /* Giảm khoảng cách giữa dropdown và các nút */
+}
+
+/* Cải thiện khoảng cách cho carousel */
+.carousel-inner .carousel-item {
+    padding-left: 5px; /* Giảm khoảng cách giữa các slide */
+    padding-right: 5px; /* Giảm khoảng cách giữa các slide */
+}
+
+/* Tùy chọn: giảm khoảng cách giữa các item carousel */
+.carousel-control-prev, .carousel-control-next {
+    padding: 0 5px; /* Giảm padding của các nút điều hướng */
+}
+
